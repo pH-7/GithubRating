@@ -43,13 +43,18 @@ class Score
 
     private function events()
     {
-        $url = sprintf(self::GITHUB_API_URL . 'users/%s/events', $this->username);
+        $githubUrl = $this->getFullUrl();
 
-        return collect(json_decode(file_get_contents($url), true));
+        return collect(json_decode(file_get_contents($githubUrl), true));
     }
 
     private function lookupScore($eventType)
     {
         return collect(self::$githubScores)->get($eventType, 1);
+    }
+
+    private function getFullUrl(): string
+    {
+        return sprintf(self::GITHUB_API_URL . 'users/%s/events', $this->username);
     }
 }
