@@ -14,3 +14,9 @@ use Github\Score;
 $sUsername = 'pH-7';
 echo 'My Github Score: ' . Score::forUser($sUsername);
 ```
+
+
+## Requirements
+
+* PHP 7.1 or higher
+* [Composer](https://getcomposer.org)
