@@ -18,5 +18,5 @@ echo 'My Github Score: ' . Score::forUser($sUsername);
 
 ## Requirements
 
-* PHP 7.1 or higher
+* PHP 7.0 or higher
 * [Composer](https://getcomposer.org)
