@@ -7,7 +7,7 @@ declare(strict_types = 1);
 
 namespace Github;
 
-require __DIR__ . '/../collection.laravel.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 class Score
 {
