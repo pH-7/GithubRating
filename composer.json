@@ -13,11 +13,12 @@
     }
   ],
   "require": {
-    "php": ">=7.1.0"
+    "php": ">=7.1.0",
+    "illuminate/support": "^5.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^6.4",
-    "phake/phake": "^2.3",
+    "phake/phake": "^3.0"
   },
   "autoload": {
     "psr-4": {
